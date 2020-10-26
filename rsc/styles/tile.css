@@ -1,0 +1,35 @@
+/* Tile Component - Encapsulated CSS */
+
+tile-component
+{
+	
+}
+
+.tile
+{
+	display:inline-block;
+	border:1px solid rgba(0,0,0,0.2);
+	
+	height:128px;
+	min-width:512px;
+	width:100%;
+	
+	margin-bottom:0.8rem;
+	
+	background-color:var(--header-background-color);
+}
+
+.info
+{
+	display:inline-block;
+	margin-top:1.6rem;
+	margin-bottom:1.6rem;
+	margin-left:calc( 128px + 1.6rem );
+	margin-right:1.6rem;
+}
+
+.info .title
+{
+	font-size:18pt;
+	font-weight:bold;
+}

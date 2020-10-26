@@ -1,0 +1,105 @@
+/*
+	HTML5 - Stylesheet
+	October 2020
+	By Joseph Juma
+*/
+
+:root
+{
+	--main-background-color:#F0F0F0;
+	--header-background-color:#E0E0E0;
+}
+
+*
+{
+	margin:0;
+	padding:0;
+	font-family:sans-serif;
+	color:#16161d;
+}
+
+body
+{
+	background-color:var(--main-background-color);
+}
+
+h1, h2, h3, h4, h5
+{
+	display:inline-block;
+}
+
+div.wrap
+{
+	padding-left:0.8in;
+	padding-right:0.8in;
+	padding-top:1in;
+	padding-bottom:0.5in;
+}
+
+span img.preview-image
+{
+	position:absolute;
+	width:128px;
+	height:128px;
+}
+
+/* Header Bar */
+header-bar
+{
+	display:block;
+	
+	position:fixed;
+	top:0;
+	
+	width:100%;
+	
+	padding-bottom:0.8rem;
+	padding-top:0.8rem;
+	padding-left:0.8in;
+	padding-right:0.8in;
+	
+	background-color:var(--header-background-color);
+}
+
+/* Footer Bar */
+footer-bar
+{
+	display:block;
+	
+	position:fixed;
+	width:100%;
+	
+	bottom:0;
+	
+	text-align:center;
+	font-size:14px;
+	
+	background-color:var(--header-background-color);
+}
+
+
+button
+{
+	padding-left:0.4rem;
+	padding-right:0.4rem;
+	padding-top:0.25rem;
+	padding-bottom:0.25rem;
+	
+	background-color:var(--header-background-color);
+	border:1px solid black;
+	border-radius:3px;
+	
+	transition:background-color 0.25s, color 0.25s;
+}
+
+p + a button
+{
+	margin-top:1.6rem;
+}
+
+button:hover
+{
+	background-color:black;
+	color:white;
+	transition:background-color 0.35s, color 0.35s;
+}

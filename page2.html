@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>Goodbye World - HTML5 Demo</title>
+	<link rel="stylesheet" href="./rsc/styles/style-oct-2020.css" />
+</head>
+<template id="header-bar-template">
+	<div class="header-bar">
+		<span class="title">
+			<slot name="title">Title</slot>
+		</span>
+		<span class="menu">
+			<!-- nothing here, yet -->
+		</span>
+	</div>
+</template>
+<template id="footer-bar-template">
+	<div class="footer-bar">
+		<p>Copyright <slot name="copyright-holder">Default Copyright Holder</slot>, 2020. All rights reserved.</p>
+	</div>
+</template>
+<template id="tile-component-template">
+	<link rel="stylesheet" href="./rsc/styles/tile.css" />
+	<div class="tile">
+		<span class="preview-image"><slot name="image">DEFAULT IMAGE</slot></span>
+		<span class="info">
+			<span class="title"><slot name="title">DEFAULT TILE TITLE</slot></span>
+			<br/>
+			<span class="description"><slot name="description">DEFAULT TILE DESCRIPTION</slot></span>
+		</span>
+	</div>
+</template>
+<body>
+	<header-bar>
+		<h1 class="title" slot="title">HTML5 Web Components - Demo</h1>
+	</header-bar>
+	<div class="wrap">
+		<h1>Goodbye World</h1>
+		<p>This page is just an example page.</p>
+		<a href="./index.html"><button>Go Back</button></a>
+	</div>
+	<footer-bar>
+		<span slot="copyright-holder">Joseph Juma</span>
+	</footer-bar>
+</body>
+<script type="text/javascript" src="./rsc/scripts/pbartist.js"></script>
+</html>
